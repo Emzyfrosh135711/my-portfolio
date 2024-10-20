@@ -1,0 +1,164 @@
+.gradient-background {
+      background: linear-gradient(300deg, #f25907, #ff7300, #eeb004);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+
+.navbar-hold{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+
+.centered-navbar{
+      width: 40%;
+}
+.orange{
+      color: #f07c07f8;
+}
+
+.montserrat{
+      font-family: "montserrat";
+}
+.tactic-sans{
+      font-family: "tactic sans";
+}
+#contact-me-btn{
+      padding: 8px 10px;
+}
+#contact-me{
+      background-color: #ff8000f8;
+}
+.orange-button{
+      padding: 13px 10px;
+      background-color: #ff8000f8;
+      border: none;
+      border-radius: 5px;
+      color: white;
+}
+
+
+.check-me-out{
+      display: flex;
+}
+.check-me-out > div{
+      width: 100%;
+      margin-right: 20%;
+}
+.icons{
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+
+.orange-button:hover{
+      background-color: #f07c07f8;
+}
+.lead{
+      font-size: 15px;
+}
+
+ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+}
+ul li{
+      list-style: none;
+      font-size: 17px;
+      font-family: "montserrat";
+}
+li a{
+      text-decoration: none;
+      color: black;
+}
+
+li a:hover{
+      color: #ff8000f8;
+}
+
+h2{
+      color: #ff8000f8;
+}
+.about-text{
+      text-align: left;
+}
+.about-me{
+      background-color: #e5e3e3;
+}
+.progress-bar{
+      background-color: #ff8000f8;
+}
+.progress-text-container{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+}
+
+@media (max-width: 992px){
+      .navbar-hold{
+            flex-direction: column;
+            justify-content: center;
+      }
+      .centered-navbar{
+            width: 60%;
+      }
+      ul{
+            margin-bottom: 10px;
+            margin-top: 10px;
+      }
+      .inix-logo{
+            height: 40px;
+      }
+      .orange-button{
+            width: 100%;
+            font-size: 15px;
+            padding: 12px 10px;
+      }
+
+      .contact-div div{
+            display: block;
+      }
+}
+
+@media(max-width: 720px){
+      ul{
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            padding: 0;
+      }
+      ul li{
+            font-size: 15px;
+      }
+
+}
+
+@media(max-width: 576px){
+      .about-info{
+            display: block;
+            text-align: center;
+            font-size: 0.8rem;
+      }
+      .check-out{
+            font-size: 0.8rem;
+      }
+      .service-text{
+            font-size: 0.8rem;
+      }
+}
+
